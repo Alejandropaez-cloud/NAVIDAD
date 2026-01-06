@@ -18,7 +18,7 @@ public class abonoGymnasio {
     private String pin;
 
     // Constructor copia.
-    public AbonoGimnasio (AbonoGimnasio otro){
+    public void AbonoGimnasio (AbonoGimnasio otro){
         this.codigo = otro.codigo;
         this.titular = otro.titular;
         this.sesiones = otro.sesiones;
@@ -39,8 +39,8 @@ public class abonoGymnasio {
         this.activo = false;
 
         // generarPin() y generarCodigo() Son métodos qe se definiran mas tarde.
-        this.pin = generarPin();
-        this.codigo = generarcodigo();
+        this.pin = generarPIN();
+        this.codigo = getCodigo();
         this.fechaCaducidad = YearMonth.now().plusMonths(6);
     }
 
@@ -133,6 +133,6 @@ public class abonoGymnasio {
         }
         return pin;
     }
-
+    
     
 }
