@@ -1,6 +1,5 @@
 package practica5;
 
-import java.nio.channels.Pipe.SourceChannel;
 import java.util.ArrayList;
 
 public class ProyectoListas {
@@ -10,14 +9,16 @@ public class ProyectoListas {
 
         ArrayList<Integer> lista;
         // Clases envolventes o wrapper classes
-        Integer numero = 5;  //boxing
         
+        Integer numero = 5;     //boxing
         int numero2 = numero;   //unboxing
+
         // Instanciar la lista.
         lista = new ArrayList<>();
         // Tenemos una lista vacia, sin numeros 
         System.out.println("Tamaño de la lista: " + lista.size());
         System.out.println(lista);
+        
         // Array.length es el equivalente a lista.size()
         // Añade elementos  -  usar métodos add.
         lista.add(35);

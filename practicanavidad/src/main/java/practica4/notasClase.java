@@ -100,6 +100,7 @@ public class notasClase {
      * MÉTODO pedirNota
      * Sirve para pedir una nota válida entre 0 y 10
      * Devuelve un double
+     * Double es un tipo de variable que incluye decimales.
      */
     public static double pedirNota() {
 
